@@ -1,0 +1,39 @@
+<html>
+<body>
+<?php
+$number1 = $_POST['num1'];
+$number2 = $_POST['num2'];
+$res = $_POST['radio'];
+if($res=="add")
+{
+$result=$number1+$number2;
+echo  "$result";
+}
+elseif($res=="sub")
+{
+$result=$number1-$number2;
+echo"$result";
+}
+elseif($res=="div")
+{
+$result=$number1/$number2;
+echo"$result";
+}
+elseif($res=="mul")
+{
+$result=$number1*$number2;
+echo"$result";
+}
+?>
+<form action="#" method="post">
+ <input type="number"  name="num1" >
+ <input type="number"  name="num2" ><br><br>
+ +<input type="radio"  name="a" value="add" >
+ -<input type="radio"  name="a"  value="sub">
+ /<input type="radio"  name="a"  value="div">
+ *<input type="radio"  name="a" value="mul" ><br><br>
+ <input type="button"  name="res" value="CALCULATE">
+ <input type="reset">		
+</form>
+</body>
+<html>
