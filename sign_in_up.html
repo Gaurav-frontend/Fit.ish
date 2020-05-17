@@ -1,0 +1,54 @@
+ <!-- The Modal for SIGN IN&UP-->
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog " style="width:400px" >
+        <div class="modal-content ">
+			<div>
+        <!-- LOG IN Modal body -->
+		  
+				<div class="modal-body" id="signin">
+					<form action="home.php" method="post">
+						<h2 class="modal-title">Sign in
+						<button type="button" class="close" data-dismiss="modal" style="margin-top:-30px;margin-right:-40px">&times;</button></h2><br>
+							<input class="form-control t" type="emailid" name="email_1" placeholder="Your email" ><br>
+							<input class="form-control t" type="password" name="password_1" placeholder="Your password"><br><br>
+								<p style="text-align:right;font-size:12px"><a href="#" style="text-decoration:none;font-family:arial;opacity:0.8">Forgot Password?</a></p><br><br>
+									<button class="form-control tf" type="button">SIGN IN</button><br>
+								<p style="text-align:center;font-size:12px;font-family:arial">or Sign in with:</p><br>
+								<p style="text-align:center;font-size:20px">
+									<button type="button" style="color:#0099ff;border:none;padding:0px 25px;border-radius:20px;background-color:white"><i class="fa fa-facebook-f"></i></button> 
+									<button type="button" style="color:#0099ff;border:none;padding:0px 25px;border-radius:20px;background-color:white"><i class="fa fa-twitter"></i></button> 
+									<button type="button" style="color:#0099ff;border:none;padding:0px 25px;border-radius:20px;background-color:white"><i class='fa fa-google'></i></button>
+								</p><br>
+					</form> 
+	
+        
+        <!-- Modal footer -->
+					<div class="modal-footer">
+						<p style="font-family:arial;font-size:12px;margin-top:10px;color:#808080">Not a member?<a href="#" style="text-decoration:none" id="form1">Sign Up</a></p>
+					</div>
+				</div>
+					
+		<!-- REGISTER Modal body -->
+				<div class="modal-body" style="display:none" id="signup">
+						
+					<form action="" method="post">
+						<h2 class="modal-title">Sign Up
+						<button type="button" class="close" data-dismiss="modal" style="margin-top:-30px;margin-right:-40px">&times;</button></h2><br>
+								<input class="form-control t" type="text" name="name" placeholder="Name"><br>
+								<input class="form-control t" type="emailid" name="email_2" placeholder="Your email"  ><br>
+								<input class="form-control t" type="number" name="mobile_no_2" placeholder="Mobile number"><br>
+								<input class="form-control t" type="password" name="password_2" placeholder="Your password"><br>
+								<input class="form-control t" type="password" name="password_3" placeholder="Confirm password"><br><br>
+									<button class="form-control tf" type="submit" name="signup" value="insert" >SIGN UP</button><br><br>
+					</form> 
+	
+        <!-- Modal footer -->
+					<div class="modal-footer">
+						<p style="font-family:arial;font-size:12px;margin-top:10px;color:#808080">Already a member?<a href="#" style="text-decoration:none" id="form2">Sign In</a></p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
